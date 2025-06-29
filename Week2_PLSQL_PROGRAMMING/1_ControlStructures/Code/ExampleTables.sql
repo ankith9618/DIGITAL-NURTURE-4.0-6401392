@@ -1,0 +1,18 @@
+--creating the rquired  tables
+
+--customer table
+CREATE TABLE CUSTOMERS (
+    CUSTOMER_ID   NUMBER PRIMARY KEY,
+    CUSTOMER_NAME VARCHAR2(100),
+    AGE           NUMBER,
+    BALANCE       NUMBER(10,2),
+    IS_VIP        VARCHAR2(5) DEFAULT 'FALSE'
+);
+
+--loans table
+CREATE TABLE LOANS (
+    LOAN_ID        NUMBER PRIMARY KEY,
+    CUSTOMER_ID    NUMBER REFERENCES CUSTOMERS(CUSTOMER_ID),
+    INTEREST_RATE  NUMBER(5,2),
+    DUE_DATE       DATE
+);
