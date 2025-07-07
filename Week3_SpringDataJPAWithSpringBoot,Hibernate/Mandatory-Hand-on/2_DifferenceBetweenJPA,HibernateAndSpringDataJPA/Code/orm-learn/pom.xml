@@ -31,7 +31,7 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
-		<!-- Spring Web (optional if you're building REST later) -->
+		<!-- Spring Web -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -44,7 +44,7 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- Native Hibernate Support (required for SessionFactory) -->
+		<!-- Native Hibernate  -->
 		<dependency>
 			<groupId>org.hibernate.orm</groupId>
 			<artifactId>hibernate-core</artifactId>
